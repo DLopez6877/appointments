@@ -13,9 +13,11 @@ $(function() {
     var dateInput = $("input#date").val();
     var timeInput = $("input#time").val();
 
-    $("#output").append("<li>" + nameInput + "</li>");
-    $("#output").append("<li>" + descriptionInput + "</li>");
-    $("#output").append("<li>" + dateInput + "</li>");
-    $("#output").append("<li>" + timeInput + "</li>");
+    $(".name").text(nameInput);
+    $(".description").text(descriptionInput);
+    $(".date").text(dateInput);
+    $(".time").text(timeInput);
+
+    $("#output").show();
   });
 });
